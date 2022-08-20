@@ -1,0 +1,379 @@
+*{ box-sizing: border-box;}
+body{margin: 0;
+    padding: 0;
+background-color: #dbdbdb;
+font-family: 'Oxygen' ,sans-serif;
+}
+#socialbar{
+    background-color: black;
+    color: white;
+    width:100%;
+    height: 60px;
+    border:2px solid;
+    position: sticky;
+    /* sayfada aşağı indikçe bu bar sabit kalsın isteiyoruz*/
+    z-index: 1;
+    /*bar hep üstte kalsın üstüne resim gelmesin istiyorum*/
+    top: 0;
+    font-size: 15px;
+    padding: 15px;
+    text-align:right;
+    /* önce center  demiştik şimdi right diyerek social medya ikonlarını sağa yalıyoruz yazı üzerinde zaten özel bir kod yazarak onu sola yasladık*/
+ben anlayamadım problemi isterseniz benim html ve css sayfamı atayım size oradan kontrol edelim olur öyle yapalım buraya yeni bir kod sayfası aç istersen ona gerek yok ya direkt sayfaya sürükleriz masaüstüne mi atayım olur
+}
+font{
+    float: left;
+    letter-spacing: 2px;
+}
+span{
+    font-size: 10px;
+}
+#socialbar>i{
+margin-right: 15px;
+float: right;
+position: relative;
+top: -50%;
+
+}
+#socialbar>i.fa-light:hover{
+    color:cornflowerblue;
+}
+#socialbar>i.fa-instagram:hover{
+    color: red;
+}
+#socialbar>i.fa-facebook:hover{
+    background-color: white;
+    color: blue;
+    border-radius: 50%;
+}
+#socialbar>i.fa-twitter:hover{
+    color: blue;
+}
+#socialbar>i.fa-search:hover{
+    color: chocolate;
+}
+
+#container{
+    width: 80%;
+    height:auto;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height:auto;
+    position: relative;
+    color: whitesmoke;
+    font-family: 'Square Peg', cursive;
+    font-size: 40px;
+    margin-bottom: 5px;
+   
+
+}
+#headerpic{
+    width:100%;
+    height:350px;/*buradaki fark social barı etkilemez diye düşnüyorum ben de öyle düşünüyorum ama bakalım isterseniz*/
+    background-size: cover;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    opacity:0.8;
+}
+#centered{
+    position: absolute;
+    /*header in pozisyonu relative olmalı ki yazımız absolut olduğunda headera göre şekillensin*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+   
+}
+#centered:hover{
+    color:blue;}
+    section{
+        width: 100%;
+        height: auto;
+        background-color: #f3f3f3;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 2px 6px 2px rgba(20,23,28,0.19);
+        margin-top: 12px;
+        overflow:auto;
+        /*bu kodu yazmsaydım nav barı section un dışına taşıyordu onu auto yaparak section içinde kalmasını sağladık*/
+    }
+    /*nav etiketini şekillendiriyoruz.*/
+    nav{
+        width: 20%;
+        height: auto;
+        margin-top: 15px;
+        float: left;
+        /*kendisinden sonra gelecek içerik altına değil de yanına gelsin istedik*/
+    }
+    nav ul{
+        width:auto;
+        height: 100%;
+        margin:0;
+        padding:0;
+    }
+    nav li{
+        list-style: none;
+    }
+    nav li a{
+        height: 50px;
+        line-height: 50px;
+        color: black;
+        border-bottom: 1px solid #b4b4b4;
+        text-decoration: none;
+        padding-left: 15px;
+        display: block;
+    }
+    nav li a:hover{
+        color:white;
+        background-color: blue;
+    }
+    i{
+        margin-left: 15px;
+        float: left;
+        margin-top: 17px;
+        margin-right: 5px;
+
+    }
+    main{
+        float: left;
+        height: auto;
+        width: 80%;
+        padding:10px;
+    }
+    .icerik{
+        width:47%;
+        height: auto;
+        margin-right: 15px;
+        display:inline-block;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px 2px rgba(20,23,28,0.19);
+       margin-bottom: 15px;
+    }
+    .rsm{
+        width:100%;
+        height:200px;
+        border-radius: 8px;
+        transition:opacity 1s;
+    }
+    .rsm:hover{
+        opacity: 0.8;
+    }
+    h5{
+        color:rgba(24, 6, 80, 0.781);
+        font-family:'Oxygen' ,sans-serif;
+        margin-left: 5px;
+        text-align: center;
+    }
+    h5:hover{
+        color: rgba(19, 17, 16, 0.918);
+        cursor: pointer;
+    }
+    .ictext{
+        margin:10px;
+        color:rgba(19, 17, 16, 0.918);
+        user-select: none;
+}
+.btndevam:link{
+    width:150px;
+    height:55px;
+    padding:10px;
+    display:block;
+    background-color: rgba(35, 18, 184, 0.19);
+    text-decoration: none;
+    padding-top: 10px;
+    border-radius: 8px;
+    margin: 15px;
+}
+.btndevam:hover{
+    color:white;
+    background-color: blue;
+    
+}
+footer{
+    width:100%;
+    height: 75px;
+    background-color: black;
+    color:white;
+    line-height: 75px;
+    text-align: center;
+    /* hizalama için line height i heighte eşitleyip texl align ile ortaya al dedim*/
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    margin-top:5px;
+    box-shadow: 20px 20px 50px 10px pink inset;
+}
+h1{
+    text-align:center;
+    height:50px;
+    line-height:50px;
+    background-color: black;
+    color:white;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow:0 2px 6px 2px rgba(20,23,28,0.19);
+}
+#aboutpic{
+    width: 350px;
+    height:300px;
+    float:left;
+    margin:15px;
+    border-radius:8px;
+    transition:opacity 1.2s;
+}
+#aboutpic:hover{
+    opacity:0.8;
+}
+h3{
+    color:rgba(201, 36, 25, 0.822);
+    letter-spacing: 2px;
+}
+h3:hover{
+    color: blue;
+}
+.abouttext{
+    margin-right:15px;
+    font-size: 17px;
+    color:#034bdg;
+    font-family:'Oxygen' ,sans-serif;
+    user-select: none;
+    text-indent:25px;
+}
+.refer{
+    width:31%;
+    height:350px;
+    border-radius: 8px;
+    background-color:whitesmoke;
+    margin:5px;
+    float: left;
+    box-shadow: 0 2px 6px 2px rgba(20,23,28,0.19);
+    }
+.refpic{
+    width:80%;
+    height:200px;
+    margin:15px;
+    margin-left: 25px;
+    border-radius: 10px;
+    opacity:0.6;
+    transition: opacity 1s;
+}   
+.refpic:hover{
+    opacity:1;
+    
+}
+.refhead{
+    font-size:20px;
+    margin-top:0px;
+    display:inline-block;
+    height:45px;
+    text-align: center;
+    width:100%;
+    line-height: 45px;
+    color: blue;
+    background-color:f1f1f1;
+} 
+.refdetail{
+    font-size: 15px;
+    color:rgba(47, 24, 179, 0.781);
+    display:inline-block;
+    height:25px;
+    text-align: center;
+    width:100%;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.galer{
+    width:30%;
+    height:250px;
+    border-radius: 8px;
+    background-color:whitesmoke;
+    margin:5px;
+    float: left;
+    box-shadow: 0 2px 6px 2px rgba(20,23,28,0.19);
+
+}
+.galpic{
+    width:80%;
+    height:200px;
+    margin:15px;
+    margin-left: 25px;
+    border-radius: 10px;
+    opacity:0.7;
+    transition: opacity 1s;
+
+}
+.galpic:hover{
+    opacity:1;
+    cursor:pointer;
+}
+iframe{
+    width:95%;
+    height:350px;
+    border-radius:10px;
+    margin-left:12px;
+    margin-top:10px;
+    box-shadow: 0 2px 6px 2px rgba(20,23,28,0.19);
+
+}
+.section1{
+    width: 98%;
+    height:auto;
+    margin: auto;
+    margin-top: 10px;
+    padding:10px;
+    background-color: f3f3f3;
+}
+
+.form{
+    width: 50%;
+    float:left;
+    height: 500px;
+    border: 2px solid #d8d8d8;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+.col25{
+    width: 25%;
+    float: left;
+    margin-top: 6px;
+}
+.col75{
+    width: 75%;
+    float: left;
+    margin-top: 6px;
+}
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    float: leftt;
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+/*bu kodu yazmasaydık kutular çok kötü bir görünümde kalacaktı.her input sonrası satırları komple temizliyoruz*/
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+input[type=submit]{
+    background-color:#4caf50;
+    color: white;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 4px;
+    float: right;
+}
+.address{
+    width: 47%;
+    height: 300px;
+    border: 2px solid #d8d8d8;
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
